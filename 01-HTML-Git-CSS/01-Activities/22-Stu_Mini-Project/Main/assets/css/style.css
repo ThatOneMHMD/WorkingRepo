@@ -16,6 +16,8 @@ body {
 h1,
 h2 {
   margin: 20px;
+  color: #5e49ac;
+  background-color: #DDAF94;
 }
 
 main {

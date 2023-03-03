@@ -8,8 +8,9 @@ h2 {
 }
 
 ul {
-  text-align: right;
+  text-align: left;
   color: #ffffff;
+
 }
 
 /* List items in navigation bar */
@@ -17,6 +18,7 @@ li {
   /* TODO: Add your code here */
   list-style-type: none;
   font-size: 40px;
+  display: inline-block
 }
 
 /* Boxes */
@@ -37,8 +39,19 @@ img {
   background-color: #999900;
 }
 
-/* Box 3 */
-#image-3 {
-  /* TODO: Add your code here */
-  display: none;
+
+.display-inline{
+
+ display: inline; 
 }
+
+.display-block{
+
+  display: block; 
+ }
+
+ .text-center{
+  text-align: center;
+ }
+
+ 
