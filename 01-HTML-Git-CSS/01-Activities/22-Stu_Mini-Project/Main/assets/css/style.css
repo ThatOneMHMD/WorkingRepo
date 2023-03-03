@@ -1,14 +1,14 @@
 /* Universal Selector */
 * {
   margin:0;
-  padding:0;  
+  padding:0; 
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-size: 20px;
 }
 
 /* Element Selectors */
 body {
   position: relative;
-  font-family: "Goudy Bookletter 1911", sans-serif;
-  font-size: 20px;
   background-color: #FDF8F5;
   color: #4F4846;
 }
