@@ -1,0 +1,46 @@
+section {
+
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    background-color: chartreuse;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+*{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+body {
+
+    background-color: blueviolet;
+}
+
+header h1 {
+
+float:left    
+}
+
+.nav-section{
+
+    float: right;
+    font-weight: bold;
+
+}
+
+
+.main-class {
+flex-grow: 1 0 200px;
+flex-wrap: wrap;
+    }
+
+
+#main-class:hover{
+
+
+}
+
