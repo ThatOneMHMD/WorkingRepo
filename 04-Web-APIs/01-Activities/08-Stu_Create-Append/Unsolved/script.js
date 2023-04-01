@@ -5,6 +5,7 @@ var imgEl = document.createElement("img");
 var kittenEl = document.createElement("div");
 var nameEl = document.createElement("div");
 var favoriteEl = document.createElement("div");
+
 // Create ordered list element
 var listEl = document.createElement("ol");
 // Create ordered list items
@@ -24,7 +25,7 @@ infoEl.appendChild(imgEl);
 infoEl.appendChild(kittenEl);
 infoEl.appendChild(nameEl);
 body.appendChild(favoriteEl);
-favoriteEl.appendChild(listEl);
+// favoriteEl.appendChild(listEl);
 // Append ordered list 
 favoriteEl.appendChild(listEl);
 
@@ -36,3 +37,20 @@ kittenEl.setAttribute("style", "font-size:25px; text-align:center;");
 favoriteEl.setAttribute("style", "font-size:20px;");
 
 // TODO: Add ordered list items containing four favorite foods
+
+li1.textContent = "apples";
+li2.textContent = "not apples";
+li3.textContent = "pizza";
+li4.textContent = "not pizza";
+
+listEl.appendChild(li1);
+listEl.appendChild(li2);
+listEl.appendChild(li3);
+listEl.appendChild(li4);
+
+listEl.setAttribute("style", "background-color:#333333; padding: 50px; color:white;")
+
+
+
+
+// good answer in the solved file!!!!!!!!!!1

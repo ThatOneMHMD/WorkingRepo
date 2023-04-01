@@ -3,6 +3,7 @@ var totalEl = document.querySelector("#total");
 var submitEl = document.querySelector("#submit");
 
 function calculateTip(total, tipPercentage) {
+  // toFixed(#) im saying is for rounding for that # of digits! Yes I chekced!
   var roundedResult = (total * tipPercentage).toFixed(2);
   return roundedResult;
 }
@@ -12,6 +13,9 @@ function calculateTotal(total, tipAmount) {
 }
 
 function addTip(event) {
+  // The prevent default can be put in any place inside this function!!!
+  event.preventDefault();
+  // to make percentage, it multiply my tip# with 1/100 so that it makes the conversion!
   var tipPercentage = tipEl.value * .01;
   var total = totalEl.value;
   var tipAmount = calculateTip(total, tipPercentage);
