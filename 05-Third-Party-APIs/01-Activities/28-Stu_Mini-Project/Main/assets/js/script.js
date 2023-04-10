@@ -40,6 +40,8 @@ function printProjectData() {
   // loop through each project and create a row
   for (var i = 0; i < projects.length; i += 1) {
     var project = projects[i];
+    console.log(project)
+
     var projectDate = dayjs(project.date);
     // get date/time for start of today
     var today = dayjs().startOf('day');
@@ -68,6 +70,7 @@ function printProjectData() {
     // append elements to DOM to display them
     rowEl.append(nameEL, typeEl, dateEl, deleteEl);
     projectDisplayEl.append(rowEl);
+
   }
 }
 

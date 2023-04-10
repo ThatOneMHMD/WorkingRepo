@@ -18,6 +18,6 @@ function getApi() {
         issueContainer.append(userName);
         issueContainer.append(issueTitle);
       }
-    });
+    }); 
 }
 fetchButton.addEventListener('click', getApi);
