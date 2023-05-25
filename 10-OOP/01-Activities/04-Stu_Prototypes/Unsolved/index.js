@@ -15,6 +15,7 @@ BlogPost.prototype.addComent = function(comment) {
   this.comments.push(comment);
 };
 
+
 const post = new BlogPost(
   'John Doe',
   'My Second Post',
@@ -26,3 +27,14 @@ post.addComent('Nice post, I like it!');
 
 // TODO: Add a comment describing what you expect to see printed in the console
 console.log(post.comments);
+
+
+
+
+// My portion:
+BlogPost.prototype.addWord = function(){
+
+  console.log(`Hello, my name is Man, the Manny`)
+};
+
+post.addWord();
