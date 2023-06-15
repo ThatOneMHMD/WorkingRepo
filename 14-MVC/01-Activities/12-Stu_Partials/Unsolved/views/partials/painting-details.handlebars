@@ -6,4 +6,15 @@
   <div class="card-body">
     <!-- TODO: Create the card body with the image of the painting and the name of the artist -->
   </div>
+
+  <a href="/painting/{{id}}">
+    <!-- The card contains the painting name as the card header -->
+    <header>{{name}}</header>
+    <!-- The card contains the first painting of the gallery -->
+    <img
+      src="/images/{{paintings.0.filename}}"
+      alt="{{paintings.0.description}}"
+    />
+  </a>
+
 </section>
