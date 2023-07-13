@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const bookSchema = new mongoose.Schema({
   title: { type: String, required: true },
   price: Number,
-});
+}); 
 
 // The librarySchema defines the schema of the parent document
 const librarySchema = new mongoose.Schema({

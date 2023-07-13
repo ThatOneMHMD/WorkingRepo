@@ -1,9 +1,12 @@
-const { Post } = require('../models');
+const { Post } = require("../models");
 
 module.exports = {
   async getPosts(req, res) {
     try {
-      const posts = await Post.find();
+      const posts = await Post.find().populate({
+        path: "tags",
+        select: "-__v",
+      });
       res.json(posts);
     } catch (err) {
       console.error({ message: err });
@@ -12,10 +15,13 @@ module.exports = {
   },
   async getSinglePost(req, res) {
     try {
-      const post = await Post.findOne({ _id: req.params.postId });
+      const post = await Post.findOne({ _id: req.params.postId }).populate({
+        path: "tags",
+        select: "-__v",
+      });
 
       !post
-        ? res.status(404).json({ message: 'No post with that ID' })
+        ? res.status(404).json({ message: "No post with that ID" })
         : res.json(post);
     } catch (err) {
       res.status(500).json(err);

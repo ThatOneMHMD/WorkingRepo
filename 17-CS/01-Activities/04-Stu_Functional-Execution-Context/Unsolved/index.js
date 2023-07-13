@@ -2,12 +2,14 @@
 function avg(array) {
   function sum() {
     let total = 0;
-    for(let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
       total += array[i];
     }
+
+    return total;
   }
-  
-  return total/array.length;
+
+  return sum() / array.length;
 }
 
 module.exports = avg;

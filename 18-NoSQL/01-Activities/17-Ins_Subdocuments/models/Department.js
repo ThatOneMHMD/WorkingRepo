@@ -31,7 +31,7 @@ const managerData = { name: 'Taylor', salary: 80000 };
 const employeeData = [
   { name: 'Ann', salary: 40000 },
   { name: 'Liu', salary: 50000 },
-];
+]; 
 
 Department
   .create({ name: 'Shoes', manager: managerData, employees: employeeData })

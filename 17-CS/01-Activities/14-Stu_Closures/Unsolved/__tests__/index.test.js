@@ -6,7 +6,7 @@ test('counter is a defined function', () => {
 
 test('counter is returning as an object', () => {
   const studentCounter = counter();
-  expect(typeof studentCounter).toEqual('object');
+  expect(typeof studentCounter).toEqual('object'); 
 });
 
 test('count should equal 1', () => {

@@ -65,7 +65,7 @@ app.use(express.json());
 
 app.get('/price-less-than-10', (req, res) => {
   db.collection('authorList')
-    .find({ data: { $lt: 10 } })
+    .find({ data: { $lt: 10 } }) 
     .toArray()
     .then(results => res.send(results))
     .catch(err => {

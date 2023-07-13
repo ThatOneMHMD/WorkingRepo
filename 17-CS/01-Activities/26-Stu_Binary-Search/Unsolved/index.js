@@ -9,7 +9,8 @@ function binarySearch(array, element) {
     let mid = Math.floor((start + end) / 2);
 
     if (array[mid] === element) {
-      return;
+      return mid;
+      // in the second iteration, this gives undefined. Value retirned is undefined: NOTE THAT: mid === array.indexOf(element);
     } else if (array[mid] < element) {
       start = mid + 1;
     } else {

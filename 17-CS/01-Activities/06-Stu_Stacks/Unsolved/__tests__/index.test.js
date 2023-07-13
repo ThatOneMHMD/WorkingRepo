@@ -26,3 +26,4 @@ describe("Stack class", () => {
     expect(stack).toEqual({ container: [1, 2, 3, 4] });
   });
 });
+ 
