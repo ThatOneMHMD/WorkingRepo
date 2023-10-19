@@ -12,14 +12,17 @@ class AuthService {
 
   isTokenExpired(token) {
     const decoded = decode(token);
-    if (decoded.exp < Date.now()) {
+
+
+    // basically have to add the /1000 so that we are measuring milli seconds...
+    if (decoded.exp < Date.now()/1000) {
       localStorage.removeItem('id_token');
       return true;
     }
     return false;
   }
 
-  getToken() {
+  getToken() { 
     return localStorage.getItem('id_token');
   }
 

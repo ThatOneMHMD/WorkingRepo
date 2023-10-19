@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 
+// secret can be stored in a dotENV filde if need be...
 const secret = 'mysecretssshhhhhhh';
 const expiration = '2h';
 

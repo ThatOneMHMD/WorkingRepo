@@ -11,7 +11,7 @@ import { QUERY_SINGLE_PROFILE } from '../utils/queries';
 
 const Profile = () => {
   // Use `useParams()` to retrieve value of the route parameter `:profileId`
-  const { profileId } = useParams();
+  const { profileId } = useParams(); 
 
   const { loading, data } = useQuery(QUERY_SINGLE_PROFILE, {
     // pass URL parameter

@@ -1,6 +1,6 @@
 import React from 'react';
 // Import our custom hook.
-import { useTheme } from '../utils/ThemeContext';
+import { useTheme } from '../utils/ThemeContext'; 
 
 // Make our ThemeComponent the default export from this file
 export default function ThemeComponent() {
